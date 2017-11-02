@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--宿主选项卡-->
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@android:id/tabhost"
+    >
+<!--android:id="@android:id/tabhost" 宿主id规定写法-->
+<!--android:id="@android:id/tabcontent" 选项卡对应内容id规定写法-->
+<!--android:id="@android:id/tabs" 选项卡id规定写法-->
+
+    <!--点击了选项按钮之后切换的内容-->
+    <FrameLayout
+        android:id="@android:id/tabcontent"
+        android:layout_marginBottom="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+
+<!--选项按钮-->
+    <TabWidget
+        android:layout_gravity="bottom"
+        android:id="@android:id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        />
+
+</TabHost>
